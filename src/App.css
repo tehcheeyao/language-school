@@ -1,0 +1,238 @@
+:root{
+  --max-width: 1080px;
+}
+
+html, #root, body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.navbar_contents{
+  width: 100%;
+  max-width: var(--max-width);
+  display: flex;
+  margin: 0 auto;
+}
+#navbar{
+  height: 64px;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 15px;
+  /* border-bottom: 1px solid rgb(242, 242, 242); */
+  gap: 8px;
+  font-weight: 500;
+  color: #222222;
+}
+
+#logo{
+  margin-right: auto;
+  padding: 15px 0;
+}
+
+.nav-item{
+  display: flex;
+  outline: none;
+  background: none;
+  border: 1px solid transparent;
+  text-align: center;
+  margin: auto 0;
+  cursor: pointer;
+  font-size: 14px;
+  height: 100%;
+}
+
+.nav-item >.hover-zone{
+  padding: 10px 15px; 
+  border-radius: 25px;
+  margin: auto;
+}
+.nav-item:hover > .hover-zone{
+  background-color: #F7F7F7;
+}
+
+.nav-item.primary > .hover-zone{
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+}
+
+.nav-item.secondary > .hover-zone{
+  border: 1px solid black;
+  font-weight: 600;
+}
+
+.language-select > .hover-zone{
+  display: flex;
+  background-color: #F7F7F7;
+  border: 1px solid lightgray;
+  padding: 5px;
+  padding-left: 5px;
+  padding-right: 8px;
+}
+
+.flag-icon{
+  background-image: url("https://hatscripts.github.io/circle-flags/flags/gb.svg");
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}
+
+.flag-label{
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.banner{
+  height: 375px;
+  background-image: url("https://i0.wp.com/www.icls.com.my/wp-content/uploads/2023/01/Japn.jpg?fit=1020%2C571&ssl=1");
+  background-size: cover;
+  background-position: top left;
+  border-radius: 25px;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  animation: mymove 0.5s ease-in-out;
+}
+
+@keyframes mymove {
+  0% {background-position: bottom left;}
+  100% {background-position: top left;}
+}
+
+.banner__title{
+  line-height: 1.1rem;
+  margin: 0;
+  font-weight: bold;
+  padding-top: 15px;
+  user-select: none;
+}
+
+.banner__subtitle{
+  font-style: italic;
+}
+
+.banner__padding{
+  padding-top: 90px;
+}
+
+.banner__buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.whatsapp-button{
+  padding: 10px 15px; 
+  padding-left: 8px;
+  border-radius: 25px;
+  background-color: black;
+  outline: none;
+  border: 1px solid transparent;
+  color: whitesmoke;
+  cursor: pointer;
+  width: fit-content;
+  font-weight: 400;
+  display: flex;
+  vertical-align: middle;
+}
+
+.whatsapp-button > img{
+  width: 15px;
+  margin-right: 5px;
+  position: relative;
+}
+
+section{
+  margin: 0 auto;
+  max-width: var(--max-width);
+
+}
+
+.our-courses{
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.our-courses__title{
+  font-weight: bold;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+.our-courses > .course{
+  min-width: 104px;
+  min-height: 136px;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: box-shadow .3s;
+}
+
+.course:hover{
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.course__flag{
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  margin-bottom: 0;
+  transition: box-shadow .3s;
+}
+
+.course > span{
+  margin: auto;
+  margin-top: 10px;
+}
+
+.jp{
+  background-image: url("https://hatscripts.github.io/circle-flags/flags/jp.svg");
+}
+
+.gb{
+  background-image: url("https://hatscripts.github.io/circle-flags/flags/gb.svg");
+}
+
+.kr{
+  background-image: url("https://hatscripts.github.io/circle-flags/flags/kr.svg");
+}
+
+.cn{
+  background-image: url("https://hatscripts.github.io/circle-flags/flags/cn.svg");
+}
+
+.my{
+  background-image: url("https://hatscripts.github.io/circle-flags/flags/my.svg");
+}
+
+.de{
+  background-image: url("https://hatscripts.github.io/circle-flags/flags/de.svg");
+}
+
+.fr{
+  background-image: url("https://hatscripts.github.io/circle-flags/flags/fr.svg");
+}
+
+.es{
+  background-image: url("https://hatscripts.github.io/circle-flags/flags/es.svg");
+}
+
+.it{
+  background-image: url("https://hatscripts.github.io/circle-flags/flags/it.svg");
+}
